@@ -1,3 +1,4 @@
+#!/bin/python3
 import sys
 import json
 import os
@@ -18,7 +19,6 @@ else:
 
         for q in data_old:
             if p['name'] == q['name']:
-                #if os.path.isdir("Vowel Gang"):
                 ext = [("playerdata",".dat"),("advancements",".json"),("stats",".json")]
                 for e in ext:
                     if not os.path.isdir(sys.argv[3] + "/backup"):
